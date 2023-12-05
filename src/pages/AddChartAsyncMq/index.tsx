@@ -62,7 +62,8 @@ const AddChartAsync: React.FC = () => {
           >
             <TextArea placeholder="请输入你的分析需求，比如：分析网站用户的增长情况" />
           </Form.Item>
-          <Form.Item name="name" label="图表名称">
+          <Form.Item name="name" label="图表名称"
+                     rules={[{ required: true, message: '请输入图表名称!' }]}>
             <Input placeholder="请输入图表名称" />
           </Form.Item>
           <Form.Item name="chartType" label="图表类型">
@@ -76,7 +77,8 @@ const AddChartAsync: React.FC = () => {
               ]}
             />
           </Form.Item>
-          <Form.Item name="file" label="原始数据">
+          <Form.Item name="file" label="原始数据"
+                     rules={[{ required: true, message: '请上传文件!' }]}>
             <Upload name="file" maxCount={1}>
               <Button icon={<UploadOutlined />}>上传 CSV 文件</Button>
             </Upload>

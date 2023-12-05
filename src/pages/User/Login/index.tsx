@@ -100,7 +100,7 @@ const Login: React.FC = () => {
           }}
           logo={<img alt="logo" src="/logo.svg" />}
           title="Aurora BI"
-          subTitle={'我怀疑你的手机里有一款两个字的开放世界游戏'}
+          subTitle={'Aurora AI智能数据分析可视化平台'}
           initialValues={{
             autoLogin: true,
           }}

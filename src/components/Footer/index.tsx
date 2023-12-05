@@ -4,7 +4,7 @@ import '@umijs/max';
 import React from 'react';
 
 const Footer: React.FC = () => {
-  const defaultMessage = '孤单北冰洋出品';
+  const defaultMessage = 'Aurora AI数据可视化平台~';
   const currentYear = new Date().getFullYear();
   return (
     <DefaultFooter
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         },
         {
           key: 'Click me',
-          title: '点我跳转blog',
+          title: 'blog',
           href: 'http://47.120.1.185:8090/',
           blankTarget: true,
         },
